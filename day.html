@@ -145,7 +145,18 @@ The junior developer comes up behind you, breathing from his mouth. He asks you 
 }
 %&gt;</tw-passagedata>
 <tw-passagedata pid="15" name="Hour 3" tags="" position="2,485">It&#39;s 11:10am and you feel like you&#39;ve bit off more than you could chew. You get up to fill your coffee tumbler with more coffee.</tw-passagedata>
-<tw-passagedata pid="16" name="Hour 4" tags="" position="2,610">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="16" name="Hour 4" tags="" position="2,610">&lt;%
+if (story.state[&quot;N8&quot;].G.V[&quot;sex&quot;] {
+%&gt;
+It&#39;s 12:30pm, and you see your team members rush by you to the door. Your PM is the last one and saunters casually, stopping by your desk. You&#39;re informed that it&#39;s lunchtime and because it&#39;s a Monday to expect a Korean BBQ truck.
+}
+else {
+%&gt;
+It&#39;s 12:30pm, and you see your team members rush by you to the door. The third one past says cheerfully that it&#39;s lunchtime and because it&#39;s Monday to expect a Korean BBQ truck.
+&lt;%
+}
+%&gt;
+</tw-passagedata>
 <tw-passagedata pid="17" name="Hour 5" tags="" position="2,735">Double-click this passage to edit it.</tw-passagedata>
 <tw-passagedata pid="18" name="Hour 6" tags="" position="2,860">Double-click this passage to edit it.</tw-passagedata>
 <tw-passagedata pid="19" name="Hour 7" tags="" position="2,985">Double-click this passage to edit it.</tw-passagedata>
