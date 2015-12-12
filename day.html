@@ -59,7 +59,8 @@ story.state[&quot;N8&quot;] = {
 		&quot;V&quot;:{
 			&quot;inventory&quot;:{
 				//
-			}
+			},
+			&quot;aggressive&quot;:0
 		}
 	}
 };
@@ -143,7 +144,7 @@ The junior developer comes up behind you, breathing from his mouth. He asks you 
 &lt;%
 }
 %&gt;</tw-passagedata>
-<tw-passagedata pid="15" name="Hour 3" tags="" position="2,485">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="15" name="Hour 3" tags="" position="2,485">It&#39;s 11:10am.</tw-passagedata>
 <tw-passagedata pid="16" name="Hour 4" tags="" position="2,610">Double-click this passage to edit it.</tw-passagedata>
 <tw-passagedata pid="17" name="Hour 5" tags="" position="2,735">Double-click this passage to edit it.</tw-passagedata>
 <tw-passagedata pid="18" name="Hour 6" tags="" position="2,860">Double-click this passage to edit it.</tw-passagedata>
@@ -228,14 +229,14 @@ Since you already have the project&#39;s specifications your PM adjourns the mee
 
 [[The meeting ended at 10:00am-&gt;Hour 2]]</tw-passagedata>
 <tw-passagedata pid="30" name="Hour 2:Passive" tags="" position="276.0001,449">&lt;%
-story.state[&quot;N8&quot;].G.V[&quot;aggressive&quot;] = 0;
+//story.state[&quot;N8&quot;].G.V[&quot;aggressive&quot;] = 0;
 %&gt;
 You&#39;ve added the line break and the developer leaves, satisfied that he got his point across.
 
 [[You continue writing into hour 3-&gt;Hour 3]]
 </tw-passagedata>
 <tw-passagedata pid="31" name="Hour 2:Aggressive" tags="" position="151,510">&lt;%
-story.state[&quot;N8&quot;].G.V[&quot;aggressive&quot;] = 1;
+++story.state[&quot;N8&quot;].G.V[&quot;aggressive&quot;];
 %&gt;
 You&#39;ve added the line break and the developer leaves, satisfied that he got his point across, seemingly oblivious to the lack of sincerity in your response.
 
